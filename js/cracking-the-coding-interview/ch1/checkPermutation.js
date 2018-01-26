@@ -7,14 +7,14 @@ That is, do they possess the same strings but in a different arrangement? */
 // ***Right away we can eliminate any strings in which the lengths differ, as obviously this inicates a character difference.***
 const permCheck = function checkPermutation(string1, string2){
     if (string1.length !== string2.length){
-      console.log(false);
+      return false;
     } else {
       string1.split('').sort().join('');
       string2.split('').sort().join('');
       if (string1 === string2){
-        console.log(true);
+        return true;
       }  else {
-        console.log(false);
+        return false;
       }
     }
 };
