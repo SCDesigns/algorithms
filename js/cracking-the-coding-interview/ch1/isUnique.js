@@ -2,6 +2,8 @@
 Implement an Algorithm to determine if a string has all unique characters.
 What if you cannot use additional data strcutures? */
 
+// Ask Interviewer: If the string is ACII or Unicode.
+
 const unique = function isUnique(string){
   for ( i=0;  i<string.length; i++ ){
     for ( j=i+1;  j<string.length; j++ ){
